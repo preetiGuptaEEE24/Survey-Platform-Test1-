@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to Our Survey Platform</h1>
+            <p>Your feedback helps us grow and improve!</p>
+        </div>
+    </header>
+
+    <section class="surveys">
+        <div class="container">
+            <h2>Available Surveys</h2>
+            
+            <!-- Job Application -->
+            <div class="survey-card" id="survey1">
+                <h3>Job Application Form</h3>
+                <p>Fill out the form to apply for the job.</p>
+                <button onclick="loadGoogleForm('https://docs.google.com/forms/d/e/1FAIpQLSfqFL2t4-xeFVUT0CIu3lL43eDpAJm_73leupwbNzVxRnj36A/viewform?d=embeddetrue', 'google-form1')">Take Survey</button>
+                <div class="google-form-container" id="google-form1" style="display: none;">
+                    <!-- Form will load here -->
+                </div>
+            </div>
+
+            <!-- Course Evaluation -->
+            <div class="survey-card" id="survey2">
+                <h3>Course Evaluation</h3>
+                <p>Provide feedback on the course you attended.</p>
+                <button onclick="loadGoogleForm('https://docs.google.com/forms/d/e/1FAIpQLSeFmrpBPLtIGS_NUiDusqHBDfgGDqfHHfJdWNrwXmgomUBxkw/viewform?d=embeddetrue', 'google-form2')">Take Survey</button>
+                <div class="google-form-container" id="google-form2" style="display: none;">
+                    <!-- Form will load here -->
+                </div>
+            </div>
+
+            <!-- T-Shirt Sign Up -->
+            <div class="survey-card" id="survey3">
+                <h3>T-Shirt Sign Up</h3>
+                <p>Sign up for your T-shirt here!</p>
+                <button onclick="loadGoogleForm('https://docs.google.com/forms/d/e/1FAIpQLScKauv-Ejyc3Yf87KjR4liN2vQxEsdp9e1Ud3EiLSHKCkh4Pg/viewform?d=embeddetrue', 'google-form3')">Take Survey</button>
+                <div class="google-form-container" id="google-form3" style="display: none;">
+                    <!-- Form will load here -->
+                </div>
+            </div>
+
+            <!-- Party Invite -->
+            <div class="survey-card" id="survey4">
+                <h3>Party Invite</h3>
+                <p>RSVP to the upcoming party.</p>
+                <button onclick="loadGoogleForm('https://docs.google.com/forms/d/e/1FAIpQLSfMnbU8mza8jcn9Ll7EDSv0AVvDWAfQhcMMYg3E-X9gLPSpCA/viewform?d=embeddetrue', 'google-form4')">Take Survey</button>
+                <div class="google-form-container" id="google-form4" style="display: none;">
+                    <!-- Form will load here -->
+                </div>
+            </div>
+
+            <!-- Event Registration -->
+            <div class="survey-card" id="survey5">
+                <h3>Event Registration</h3>
+                <p>Register for the upcoming event.</p>
+                <button onclick="loadGoogleForm('https://docs.google.com/forms/d/e/1FAIpQLSfDenMIh8FW1wd76cYInnBOAP3r80EUIC5S-6Vh71WCrSlx6Q/viewform?d=embeddetrue', 'google-form5')">Take Survey</button>
+                <div class="google-form-container" id="google-form5" style="display: none;">
+                    <!-- Form will load here -->
+                </div>
+            </div>
+
+            <!-- Customer Feedback -->
+            <div class="survey-card" id="survey6">
+                <h3>Customer Feedback</h3>
+                <p>Help us improve our services with your feedback.</p>
+                <button onclick="loadGoogleForm('https://docs.google.com/forms/d/e/1FAIpQLSeiPEBA63B2OxG-yZxZgPMZdkndTGr6wGagmgi7ypXvU_2lVg/viewform?d=embeddetrue', 'google-form6')">Take Survey</button>
+                <div class="google-form-container" id="google-form6" style="display: none;">
+                    <!-- Form will load here -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>User Testimonials</h2>
+            <p>"This platform helped me reflect on my journey!" - User A</p>
+            <p>"Great survey experience. Clear questions!" - User B</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
